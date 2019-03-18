@@ -10655,6 +10655,19 @@ a.text-dark:focus {
   }
 }
 
+footer {
+  position: fixed;
+  margin-top: 30px;
+  padding: 20px;
+  color: #fff;
+  background: #333;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
