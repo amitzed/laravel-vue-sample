@@ -18,8 +18,8 @@
               <div class="div3">
                 <img class="logo" src="" alt="">
               </div>
-              <div class="div4">Some Text</div>
-              <div class="div5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="div4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+              <div class="div5">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
               <div class="div6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
             </div>
 
@@ -57,7 +57,7 @@
           background-color: #FFE1CF;
           margin: 10px;
           padding: 30px;
-          height: auto; /* Makes all DIVs stay inside box */
+          height: auto;
           display: flex;
           flex-flow: row wrap;
           align-items: center;
@@ -121,13 +121,15 @@
           background-color: #CFDBC9;
           margin: 5px;
           width: 150px;
-          height: 150px;
+          height: auto;
         }
         @media (max-width: 600px) {
           .div4  {
             margin: 1px;
-            height: 65px;
-            width: 65px;
+            height: auto;
+            width: 140px;
+            font-size: .25rem;
+            flex: 1 1 auto;
             transition: ease all .5s;
           }
         }
