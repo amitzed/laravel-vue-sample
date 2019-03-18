@@ -214,3 +214,38 @@
           }
         }
     </style>
+    <script type="text/javascript">
+      // Interactivity
+      let candy;
+      let money;
+
+      const start = ()=>{
+      candy = 0;
+      money = 25;
+      showStatus();
+      };
+      const showStatus = () => {
+      alert('You have ' + candy + ' pieces of candy & $' + money);
+      askForAction();
+      };
+      const askForAction = () => {
+      const choice = prompt('What do you want to do?', 'buy candy / eat candy / restart');
+      if(choice === 'buy candy') {
+        buyCandy();
+      } else if(choice === 'eat candy') {
+        eatCandy();
+      } else if(choice === 'restart') {
+        start();
+      }
+      };
+      const buyCandy = () => {
+      candy++;
+      money -= .75;
+      showStatus();
+      };
+      const eatCandy = () => {
+      candy--;
+      showStatus();
+      };
+      start();
+    </script>
