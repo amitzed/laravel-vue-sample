@@ -17,10 +17,15 @@ body {
   color: #fff;
 }
 
-footer {
+.jumbotron {
+  background: #E3DB96;
+  text-align: center;
+}
+
+#footer {
   position: fixed;
-  margin-top: 30px;
-  padding: 20px;
+  padding: 10px;
+  margin: 0;
   color: #fff;
   background: #333;
   left: 0;
