@@ -5,9 +5,28 @@
                     Hello from Vue on Laravel
                 </div>
                 <div class="links">
-                    <a href="https://laravel.com/docs">Laravel</a>
-                    <a href="https://vuejs.org/v2/guide/">Vue</a>
+                    <a href="https://amitzaman.com/">Amit's Website</a>
+                    <a href="https://github.com/amitzed/laravel-vue-sample">Amit's Github</a>
                 </div>
+            </div>
+            <div class="parent">
+              <div class="div1">
+                <img class="car" src="https://assets.bugatti.com/fileadmin/_processed_/sei/p2/se-image-2aa68763cc88b824242186ef758abcdc.jpg" alt=""></div>
+              <div class="div2">
+                <img class="mw-banner" src="" alt="">
+              </div>
+              <div class="div3">
+                <img class="logo" src="" alt="">
+              </div>
+              <div class="div4">Some Text</div>
+              <div class="div5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="div6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+
+            <div class="media-queries">
+              <h1>Title<span>Secondary Title</span></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
     </template>
@@ -15,43 +34,12 @@
         export default {}
     </script>
     <style scoped>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
         .content {
             text-align: center;
         }
-
         .title {
-            font-size: 84px;
+            font-size: 44px;
         }
-
         .links > a {
             color: #636b6f;
             padding: 0 25px;
@@ -64,5 +52,165 @@
 
         .m-b-md {
             margin-bottom: 30px;
+        }
+        .parent {
+          background-color: #FFE1CF;
+          margin: 10px;
+          padding: 30px;
+          height: auto; /* Makes all DIVs stay inside box */
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+        }
+        @media (max-width: 600px) {
+          .parent {
+            background-color: steelblue;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            transition: ease all .5s;
+          }
+        }
+        .div1 .car {
+          margin: 1px;
+          height: 150px;
+          width: 150px;
+        }
+        @media (max-width: 600px) {
+          .div1 .car  {
+            margin: 1px;
+            height: 65px;
+            width: 65px;
+            transition: ease all .5s;
+          }
+        }
+        .div2 .mw-banner {
+          margin: 5px;
+          width: 150px;
+          font-size: 30px;
+          text-align: center;
+        }
+        .div2 {
+
+        }
+        @media (max-width: 600px) {
+          .div2 .mw-banner  {
+            margin: 1px;
+            width: 65px;
+            transition: ease all .5s;
+          }
+        }
+        .div3 .logo {
+          margin: 5px;
+          height: 150px;
+        }
+        @media (max-width: 600px) {
+          .div3 .logo   {
+            margin: 1px;
+            height: 65px;
+            width: 65px;
+            transition: ease all .5s;
+          }
+        }
+        .div4 {
+          background-color: #CFDBC9;
+          margin: 5px;
+          width: 150px;
+          height: 150px;
+        }
+        @media (max-width: 600px) {
+          .div4  {
+            margin: 1px;
+            height: 65px;
+            width: 65px;
+            transition: ease all .5s;
+          }
+        }
+        .div5 {
+          font-family: 'Arvo', serif;
+          background-color: #CFDBC9;
+          margin: 5px;
+          width: 200px;
+          flex: 1 1 auto;
+        }
+        @media (max-width: 600px) {
+          .div5   {
+            margin: 1px;
+            height: auto;
+            width: 140px;
+            font-size: .25rem;
+            flex: 1 1 auto;
+            transition: ease all .5s;
+          }
+        }
+        .div6 {
+          font-family: 'Arvo', serif;
+          background-color: #CFDBC9;
+          margin: 5px;
+          width: 200px;
+          flex: 2 1 auto;
+        }
+        @media (max-width: 600px) {
+          .div6 {
+            margin: 1px;
+            height: auto;
+            width: 140px;
+            font-size: .25rem;
+            flex: 2 1 auto;
+            transition: ease all .5s;
+          }
+        }
+        .media-queries {
+          margin: 0 auto;
+          max-width: 850px;
+        }
+        h1 {
+          font-family: 'Arvo', serif;
+          color: #3E4147;
+          font-size: 3rem;
+          line-height: 1.15;
+          font-weight: 700;
+          margin-top: 0;
+          margin-bottom: .5em;
+          text-transform: uppercase;
+        }
+        h1 span {
+          color: #636b6f;
+          font-size: .5em;
+          display: block;
+        }
+
+        p {
+          font-family: 'Arvo', serif;
+          color: #3E4147;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.75;
+          margin-bottom: 2em;
+        }
+        @media (min-width: 1500px) {
+          p {
+            color: blue;
+            font-size: 2.50rem;
+            transition: ease all .5s;
+           }
+        }
+        @media (min-width: 800px) {
+          p {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            transition: ease all .5s;
+          }
+        }
+        @media (max-width: 800px) {
+          p {
+            font-size: .25em;
+            transition: ease all .5s;
+          }
         }
     </style>
