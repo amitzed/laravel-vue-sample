@@ -20,9 +20,9 @@
         </div>
       </div>
     </div>
-      </body>
+
     <div class="footer">
       @include('inc.footer')
     </div>
-
+  </body>
 </html>
