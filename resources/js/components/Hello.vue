@@ -54,7 +54,7 @@
             margin-bottom: 30px;
         }
         .parent {
-          background-color: #FFE1CF;
+          background-color: #DE4D3A;
           margin: 10px;
           padding: 30px;
           height: auto;
@@ -118,7 +118,7 @@
           }
         }
         .div4 {
-          background-color: #CFDBC9;
+          background-color: #E3DB96;
           margin: 5px;
           width: 150px;
           height: auto;
@@ -135,7 +135,7 @@
         }
         .div5 {
           font-family: 'Arvo', serif;
-          background-color: #CFDBC9;
+          background-color: #E3DB96;
           margin: 5px;
           width: 200px;
           flex: 1 1 auto;
@@ -152,7 +152,7 @@
         }
         .div6 {
           font-family: 'Arvo', serif;
-          background-color: #CFDBC9;
+          background-color: #E3DB96;
           margin: 5px;
           width: 200px;
           flex: 2 1 auto;
