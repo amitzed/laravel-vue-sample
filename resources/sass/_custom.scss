@@ -1,13 +1,14 @@
 html {
   background-color: #F08400;
   padding: 10px;
+  margin-bottom: 50%;
 }
 
 body {
   background-color: #E3DB96;
-  padding: 10px;
+  padding: 10px 10px 50px 10px;
   margin: 0;
-  height: 100%;
+  // padding-bottom: 50px;
 }
 // Nav
 .site-header {
@@ -20,6 +21,7 @@ body {
 // HomePage Jumbotron
 .jumbotron {
   background: #E3DB96;
+  padding: 0;
   text-align: center;
 }
 @media (max-width: 600px) {
@@ -29,7 +31,7 @@ body {
   }
 }
 
-#footer {
+.footer {
   position: fixed;
   padding: 10px;
   margin: 0;
@@ -37,16 +39,11 @@ body {
   background: #333;
   left: 0;
   bottom: 0;
-
-
-  // position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
   height: auto;
+  width: 100%;
 }
 @media (max-width: 600px) {
-  #footer {
+  .footer {
     font-size: .5em;
     transition: ease all .75s;
   }
