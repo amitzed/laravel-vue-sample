@@ -181,6 +181,12 @@
           margin-bottom: .5em;
           text-transform: uppercase;
         }
+        @media (max-width: 600px) {
+          h1 {
+            font-size: 1.5rem;
+            text-align: center;
+          }
+        }
         h1 span {
           color: #636b6f;
           font-size: .5em;
