@@ -77,13 +77,11 @@
       <!-- Grid row -->
     </div>
     <!-- Footer Links -->
-
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
       <a href="https://amitzaman.com/"> AZ</a>
     </div>
     <!-- Copyright -->
-
   </footer>
   </body>
 </html>
